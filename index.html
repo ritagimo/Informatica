@@ -1,21 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informatica</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Salão de Informática</title>
+
+    <!-- Importando Google Icons e Materialize CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <style>
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1581091870620-3f94f4a4e4b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGludGVsbGlnZW5jZXxlbnwwfHx8fDE2NDE0NTU3NzQ&ixlib=rb-1.2.1&q=80&w=400');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .service-card {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .service-card h5 {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .about {
+            background: #f5f5f5;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #26a69a;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
+
+    <!-- Seção de capa com imagem -->
+    <section class="hero">
+        <h1>Salão de Informática</h1>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section class="section about">
+        <div class="container">
+            <h3 class="center-align">Sobre Nós</h3>
+            <p class="flow-text">
+                O Salão de Informática é especializado em tratamentos capilares e serviços de beleza modernos com um toque de tecnologia de inteligência artificial. Nossa equipe está sempre atualizada com as últimas tendências para garantir que você receba o melhor atendimento.
+            </p>
         </div>
-      </nav>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section class="section">
+        <div class="container">
+            <h3 class="center-align">Nossos Serviços</h3>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card service-card">
+                        <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Corte de Cabelo IA">
+                        <h5>Corte de Cabelo com IA</h5>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card service-card">
+                        <img src="https://images.unsplash.com/photo-1560264418-5e0b8d621983?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Coloração Inteligente">
+                        <h5>Coloração Inteligente</h5>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card service-card">
+                        <img src="https://images.unsplash.com/photo-1581091012184-d3c7aa8ba1d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Tratamento Capilar AI">
+                        <h5>Tratamento Capilar AI</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card service-card">
+                        <img src="https://images.unsplash.com/photo-1581091019537-8c269eac5b0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Escova Progressiva Inteligente">
+                        <h5>Escova Progressiva Inteligente</h5>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card service-card">
+                        <img src="https://images.unsplash.com/photo-1600079389939-f899439be3b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Manicure e Pedicure AI">
+                        <h5>Manicure e Pedicure AI</h5>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card service-card">
+                        <img src="https://images.unsplash.com/photo-1611078483367-dc2807f58ff3?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Design de Sobrancelhas com IA">
+                        <h5>Design de Sobrancelhas com IA</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens -->
+    <section class="section">
+        <div class="container">
+            <h3 class="center-align">Nossa Galeria</h3>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img class="materialboxed" width="100%" src="https://images.unsplash.com/photo-1611078483336-737c14f8ae08?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="IA no Salão 1">
+                </div>
+                <div class="col s12 m3">
+                    <img class="materialboxed" width="100%" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="IA no Salão 2">
+                </div>
+                <div class="col s12 m3">
+                    <img class="materialboxed" width="100%" src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="IA no Salão 3">
+                </div>
+                <div class="col s12 m3">
+                    <img class="materialboxed" width="100%" src="https://images.unsplash.com/photo-1581091214319-6e2db00d86d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="IA no Salão 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="section teal lighten-2 white-text">
+        <div class="container">
+            <h3 class="center-align">Entre em Contato</h3>
+            <div class="row">
+                <div class="col s12 m6">
+                    <h5>Endereço</h5>
+                    <p>Av. Principal, 123, Centro, Cidade</p>
+                </div>
+                <div class="col s12 m6">
+                    <h5>Telefone</h5>
+                    <p>(+258) 123-456-789</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="teal">
+        <div class="container">
+            <p>&copy; 2024 Salão de Informática. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
